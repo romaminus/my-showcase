@@ -1,15 +1,11 @@
+
 import projects from "@/data/projects.json";
-import Image from "next/image";
-import { WorkDetailProps } from "@/lib/types";
-
-// type WorkDetailProps = {
-//   params: Promise<{ slug: string }>;
-// };
-
+import { WorkDetailProps, Project } from "@/lib/types";
+import ImageShow from "../../../components/ImageShow";
 
 export default async function WorkDetailPage({ params }: WorkDetailProps) {
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === slug);
+  const project: Project | undefined = (projects as Project[]).find((p) => p.slug === slug);
 
   if (!project) {
     return (
@@ -45,18 +41,7 @@ export default async function WorkDetailPage({ params }: WorkDetailProps) {
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {project.screenshots.map((src, i) => (
-            <Image
-              key={i}
-              src={src}
-              alt={`${project.title} screenshot ${i + 1}`}
-              className="rounded-lg border-2 border-orange-100 shadow-md"
-              width={500}
-              height={350}
-            />
-          ))}
-        </div>
+        <ImageShow screenshots={project.screenshots} title={project.title} />
       </div>
     </main>
   );

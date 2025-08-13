@@ -13,7 +13,6 @@ export async function POST(request: Request) {
     }
 
     try {
-        // Парсимо JSON одразу
         const body = await request.json();
         console.log("Parsed body:", body);
 
@@ -23,7 +22,6 @@ export async function POST(request: Request) {
             return NextResponse.json({ message: "Всі поля обов'язкові" }, { status: 400 });
         }
 
-        // 1) Читаємо поточний вміст біну
         const getRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
             headers: { 'X-Master-Key': API_KEY },
         });
@@ -37,7 +35,6 @@ export async function POST(request: Request) {
         const getData = await getRes.json();
         const contacts = Array.isArray(getData.record) ? getData.record : [];
 
-        // 2) Додаємо новий контакт
         const newContact = {
             id: Date.now().toString(),
             name,
@@ -46,7 +43,6 @@ export async function POST(request: Request) {
         };
         contacts.push(newContact);
 
-        // 3) Оновлюємо bin
         const putRes = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
             method: 'PUT',
             headers: {

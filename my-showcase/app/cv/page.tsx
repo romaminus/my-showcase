@@ -64,7 +64,6 @@ export default function CVSection() {
           </li>
         </ul>
 
-        {/* Contacts */}
         <h3 className="text-2xl font-semibold text-orange-700 mb-2">Contacts</h3>
         <ContactsBlock />
       </div>
