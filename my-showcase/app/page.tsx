@@ -3,7 +3,7 @@ import imageCV from "../public/me.png";
 
 export default function HomePage() {
     return (
-        <main className="flex flex-col items-center justify-center min-h-screen bg-orange-50 px-6">
+        <main className="flex flex-col items-center justify-center min-h-screen bg-orange-50 px-6 pt-16">
             <h1 className="text-4xl md:text-5xl font-extrabold text-orange-800 drop-shadow-md mb-8 text-center">
                 Welcome to My Portfolio
             </h1>
