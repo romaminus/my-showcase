@@ -89,6 +89,9 @@
     "description": "A personal portfolio showcase application.",
     "repo": "https://github.com/romaminus/my-showcase/tree/main/my-showcase",
     "live": "https://my-showcase-one.vercel.app/",
-    "screenshots": []
+    "screenshots": [
+      "/images/screenshot-showcase1.png",
+      "/images/screenshot-showcase2.png"
+    ]
   }
 ]
