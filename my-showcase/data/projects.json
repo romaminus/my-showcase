@@ -2,37 +2,94 @@
   {
     "slug": "task-manager-app",
     "title": "Task Manager App",
-    "stack": ["React", "Tailwind CSS", "Redux Toolkit", "Redux Thunk", "CSS Modules", "Node.js", "Express", "JSON-based mock database(Fs)"],
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Redux Thunk",
+      "CSS Modules",
+      "Node.js",
+      "Express",
+      "JSON-based mock database(Fs)"
+    ],
     "image": "/images/task-manager.png",
     "description": "A simple task management application with state management using Zustand.",
     "repo": "https://github.com/romaminus/task-manager-app/tree/main",
-    "screenshots": ["/images/screenshot-task1.png", "/images/screenshot-task2.png"]
+    "screenshots": [
+      "/images/screenshot-task1.png",
+      "/images/screenshot-task2.png"
+    ]
   },
   {
     "slug": "job-tracker",
     "title": "Job Tracker",
-    "stack": ["React", "Zustand ", "Tailwind CSS", "Node.js", "Express", "CORS"],
+    "stack": [
+      "React",
+      "Zustand",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "CORS"
+    ],
     "image": "/images/job-tracker.png",
     "description": "An app for tracking job applications with filtering and search.",
     "repo": "https://github.com/romaminus/job-tracker",
-    "screenshots": ["/images/screenshot-job1.png", "/images/screenshot-job2.png", "/images/screenshot-job3.png"]
+    "screenshots": [
+      "/images/screenshot-job1.png",
+      "/images/screenshot-job2.png",
+      "/images/screenshot-job3.png"
+    ]
   },
   {
     "slug": "booking-educational-project",
     "title": "Booking Educational Project",
-    "stack": ["React", "Zustand", "Chakra UI"],
+    "stack": [
+      "React",
+      "Zustand",
+      "Chakra UI"
+    ],
     "image": "/images/booking.png",
     "description": "Educational project for building a booking system with authentication and database.",
     "repo": "https://github.com/romaminus/booking-educational-project",
-    "screenshots": ["/images/screenshot-booking2.png", "/images/screenshot-booking1.png"]
+    "screenshots": [
+      "/images/screenshot-booking2.png",
+      "/images/screenshot-booking1.png"
+    ]
   },
   {
     "slug": "pixhub",
     "title": "PixHub",
-    "stack": ["React", "Firebase", "Tailwind CSS", "Material UI(for Admin)"],
+    "stack": [
+      "React",
+      "Firebase",
+      "Tailwind CSS",
+      "Material UI(for Admin)"
+    ],
     "image": "/images/pixhub.png",
     "description": "E-commerce store for accessories and services with Firebase backend.",
-    "repo": "https://pixhubmain.web.app/",
-    "screenshots": ["/images/screenshot-pixhub2.png", "/images/screenshot-pixhub4.png", "/images/screenshot-pixhub3.png", "/images/screenshot-pixhub1.png"]
+    "repo": "",
+    "live": "https://pixhubmain.web.app/",
+    "screenshots": [
+      "/images/screenshot-pixhub2.png",
+      "/images/screenshot-pixhub4.png",
+      "/images/screenshot-pixhub3.png",
+      "/images/screenshot-pixhub1.png"
+    ]
+  },
+  {
+    "slug": "my-showcase",
+    "title": "My Showcase",
+    "stack": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "TypeScript"
+    ],
+    "image": "/images/my-showcase.png",
+    "description": "A personal portfolio showcase application.",
+    "repo": "https://github.com/romaminus/my-showcase/tree/main/my-showcase",
+    "live": "https://my-showcase-one.vercel.app/",
+    "screenshots": [
+    ]
   }
 ]

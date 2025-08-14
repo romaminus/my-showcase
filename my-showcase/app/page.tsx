@@ -1,5 +1,6 @@
 import Image from "next/image";
 import imageCV from "../public/me.png";
+import Link from "next/link";
 
 export default function HomePage() {
     return (
@@ -29,6 +30,12 @@ export default function HomePage() {
                         abilities. I am ready for intensive work and committed to achieving
                         shared goals.
                     </p>
+                    <Link
+                        href={`cv`}
+                        className="mt-6 inline-block bg-orange-200 text-orange-800 font-semibold px-4 py-2 rounded-full hover:bg-orange-300 transition-all duration-200 text-center shadow-md"
+                    >
+                        View CV
+                    </Link>
                 </div>
 
             </div>

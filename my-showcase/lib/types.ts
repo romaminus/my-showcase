@@ -12,11 +12,13 @@ export interface ImageGalleryProps {
   title: string;
 }
 export interface Project {
-  slug: string;
-  title: string;
-  description: string;
-  stack: string[];
-  repo?: string;
-  screenshots: string[];
+    slug: string;
+    title: string;
+    stack: string[];
+    image: string;
+    description: string;
+    repo: string;
+    live?: string | null;
+    screenshots?: string[];
 }
 export type FormData = Omit<Contact, 'id'>;

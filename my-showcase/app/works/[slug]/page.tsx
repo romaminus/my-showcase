@@ -29,6 +29,16 @@ export default async function WorkDetailPage({ params }: WorkDetailProps) {
         </p>
 
         <div className="flex gap-4 mb-8">
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-orange-800 text-white font-semibold px-4 py-2 rounded-full hover:bg-orange-900 transition-all duration-200 shadow-md"
+            >
+              Live Demo
+            </a>
+          )}
           {project.repo && (
             <a
               href={project.repo}
