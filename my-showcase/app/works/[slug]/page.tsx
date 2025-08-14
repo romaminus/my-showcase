@@ -51,7 +51,9 @@ export default async function WorkDetailPage({ params }: WorkDetailProps) {
           )}
         </div>
 
-        <ImageShow screenshots={project.screenshots} title={project.title} />
+        {project.screenshots && project.screenshots.length > 0 && (
+          <ImageShow screenshots={project.screenshots} title={project.title} />
+        )}
       </div>
     </main>
   );
